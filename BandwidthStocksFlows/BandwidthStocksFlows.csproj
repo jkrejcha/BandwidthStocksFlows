@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>0.1.0.5</Version>
+    <Company>$(Authors)</Company>
+    <Authors>Justine Krejcha</Authors>
+    <Copyright>Copyright (c) 2023 Justine Krejcha</Copyright>
+    <Description>Convert between bandwidth stocks and flows</Description>
+  </PropertyGroup>
+
+</Project>
