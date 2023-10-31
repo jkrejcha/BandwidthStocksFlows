@@ -98,8 +98,9 @@
 			// nudFlowPx
 			// 
 			nudFlowPx.DecimalPlaces = 5;
+			nudFlowPx.Increment = new decimal(new int[] { 1, 0, 0, 131072 });
 			nudFlowPx.Location = new Point(65, 73);
-			nudFlowPx.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+			nudFlowPx.Maximum = new decimal(new int[] { 1410065408, 2, 0, 0 });
 			nudFlowPx.Name = "nudFlowPx";
 			nudFlowPx.Size = new Size(196, 27);
 			nudFlowPx.TabIndex = 2;
@@ -118,7 +119,7 @@
 			// 
 			nudFlow.DecimalPlaces = 5;
 			nudFlow.Location = new Point(65, 40);
-			nudFlow.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+			nudFlow.Maximum = new decimal(new int[] { 0, 268435456, 0, 0 });
 			nudFlow.Name = "nudFlow";
 			nudFlow.Size = new Size(128, 27);
 			nudFlow.TabIndex = 0;
@@ -163,7 +164,7 @@
 			// 
 			cbStockUnit.DropDownStyle = ComboBoxStyle.DropDownList;
 			cbStockUnit.FormattingEnabled = true;
-			cbStockUnit.Items.AddRange(new object[] { "B", "KB", "MB", "GB", "TB" });
+			cbStockUnit.Items.AddRange(new object[] { "B", "KB", "MB", "GB", "TB", "PB", "EB" });
 			cbStockUnit.Location = new Point(198, 40);
 			cbStockUnit.Name = "cbStockUnit";
 			cbStockUnit.Size = new Size(63, 28);
@@ -172,9 +173,10 @@
 			// nudStockPx
 			// 
 			nudStockPx.DecimalPlaces = 5;
+			nudStockPx.Increment = new decimal(new int[] { 1, 0, 0, 131072 });
 			nudStockPx.Location = new Point(50, 75);
 			nudStockPx.Margin = new Padding(3, 4, 3, 4);
-			nudStockPx.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+			nudStockPx.Maximum = new decimal(new int[] { 1410065408, 2, 0, 0 });
 			nudStockPx.Name = "nudStockPx";
 			nudStockPx.Size = new Size(211, 27);
 			nudStockPx.TabIndex = 5;
@@ -193,7 +195,7 @@
 			nudStock.DecimalPlaces = 5;
 			nudStock.Location = new Point(50, 40);
 			nudStock.Margin = new Padding(3, 4, 3, 4);
-			nudStock.Maximum = new decimal(new int[] { 1409065408, 2, 0, 0 });
+			nudStock.Maximum = new decimal(new int[] { 0, 268435456, 0, 0 });
 			nudStock.Name = "nudStock";
 			nudStock.Size = new Size(142, 27);
 			nudStock.TabIndex = 1;

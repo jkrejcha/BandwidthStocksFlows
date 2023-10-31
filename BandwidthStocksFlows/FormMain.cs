@@ -18,6 +18,8 @@ namespace BandwidthStocksFlows
 			{ "MB", 1000L * 1000 },
 			{ "GB", 1000L * 1000 * 1000 },
 			{ "TB", 1000L * 1000 * 1000 * 1000 },
+			{ "PB", 1000L * 1000 * 1000 * 1000 * 1000 },
+			{ "EB", 1000L * 1000 * 1000 * 1000 * 1000 * 1000 },
 		};
 
 		private const Int64 monthSeconds = 60 * 60 * 24 * 30;
@@ -42,8 +44,8 @@ namespace BandwidthStocksFlows
 				Int64 unit = stockToB[(String)cbStockUnit.SelectedItem];
 				nudStock.Value = stockB / unit;
 				nudStockPx.Value = nudFlowPx.Value / nudStock.Value;
-			} 
-			else 
+			}
+			else
 			{
 				Decimal stockB = nudStock.Value * stockToB[(String)cbStockUnit.SelectedItem];
 				Decimal flowBps = stockB / monthSeconds * bitsToByte;
