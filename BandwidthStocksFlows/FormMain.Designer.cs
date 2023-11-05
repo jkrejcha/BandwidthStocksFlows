@@ -71,7 +71,7 @@
 			btnUpdateFlow.Location = new Point(90, 106);
 			btnUpdateFlow.Name = "btnUpdateFlow";
 			btnUpdateFlow.Size = new Size(87, 27);
-			btnUpdateFlow.TabIndex = 5;
+			btnUpdateFlow.TabIndex = 3;
 			btnUpdateFlow.Tag = "Flow";
 			btnUpdateFlow.Text = "Update";
 			btnUpdateFlow.UseVisualStyleBackColor = true;
@@ -145,7 +145,7 @@
 			btnUpdateStocks.Location = new Point(91, 109);
 			btnUpdateStocks.Name = "btnUpdateStocks";
 			btnUpdateStocks.Size = new Size(87, 27);
-			btnUpdateStocks.TabIndex = 6;
+			btnUpdateStocks.TabIndex = 7;
 			btnUpdateStocks.Tag = "Stock";
 			btnUpdateStocks.Text = "Update";
 			btnUpdateStocks.UseVisualStyleBackColor = true;
@@ -179,7 +179,7 @@
 			nudStockPx.Maximum = new decimal(new int[] { 1410065408, 2, 0, 0 });
 			nudStockPx.Name = "nudStockPx";
 			nudStockPx.Size = new Size(211, 27);
-			nudStockPx.TabIndex = 5;
+			nudStockPx.TabIndex = 6;
 			// 
 			// lblStock
 			// 
@@ -198,7 +198,7 @@
 			nudStock.Maximum = new decimal(new int[] { 0, 268435456, 0, 0 });
 			nudStock.Name = "nudStock";
 			nudStock.Size = new Size(142, 27);
-			nudStock.TabIndex = 1;
+			nudStock.TabIndex = 4;
 			// 
 			// lblNote
 			// 
