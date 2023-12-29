@@ -22,7 +22,9 @@ namespace BandwidthStocksFlows
 			{ "EB", 1000L * 1000 * 1000 * 1000 * 1000 * 1000 },
 		};
 
-		private const Int64 monthSeconds = 60 * 60 * 24 * 30;
+		private const Int64 hourSeconds = 60 * 60;
+		private const Int64 daySeconds = hourSeconds * 24;
+		private const Int64 monthSeconds = daySeconds * 30;
 		private const Int32 bitsToByte = 8;
 
 		public FormMain()
