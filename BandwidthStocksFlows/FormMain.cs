@@ -34,15 +34,23 @@ namespace BandwidthStocksFlows
 			this.MaximumSize = this.Size;
 			cbFlowUnit.SelectedIndex = 0;
 			cbStockUnit.SelectedIndex = 0;
+			cbStocksType.SelectedIndex = 0;
 		}
 
 		public void UpdateUi(Boolean flows)
 		{
 			this.SuspendLayout();
+			Int64 divider = cbStocksType.SelectedIndex switch
+			{
+				0 => monthSeconds,
+				1 => daySeconds,
+				2 => hourSeconds,
+				_ => monthSeconds,
+			};
 			if (flows)
 			{
 				Decimal flowsBps = nudFlow.Value * flowToBps[(String)cbFlowUnit.SelectedItem];
-				Decimal stockB = flowsBps * monthSeconds / bitsToByte;
+				Decimal stockB = flowsBps * divider / bitsToByte;
 				Int64 unit = stockToB[(String)cbStockUnit.SelectedItem];
 				nudStock.Value = stockB / unit;
 				nudStockPx.Value = nudFlowPx.Value / nudStock.Value;
@@ -50,7 +58,7 @@ namespace BandwidthStocksFlows
 			else
 			{
 				Decimal stockB = nudStock.Value * stockToB[(String)cbStockUnit.SelectedItem];
-				Decimal flowBps = stockB / monthSeconds * bitsToByte;
+				Decimal flowBps = stockB / divider * bitsToByte;
 				Int64 unit = flowToBps[(String)cbFlowUnit.SelectedItem];
 				nudFlow.Value = flowBps / unit;
 				nudFlowPx.Value = nudStockPx.Value / nudFlow.Value;
