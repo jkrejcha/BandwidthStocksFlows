@@ -7,7 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>0.1.0.7</Version>
+    <Version>0.1.0.9</Version>
     <Company>$(Authors)</Company>
     <Authors>Justine Krejcha</Authors>
     <Copyright>Copyright (c) 2023 Justine Krejcha</Copyright>
