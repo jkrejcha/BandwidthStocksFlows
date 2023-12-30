@@ -36,6 +36,7 @@
 			cbFlowUnit = new ComboBox();
 			nudFlow = new NumericUpDown();
 			gbStocks = new GroupBox();
+			cbStocksType = new ComboBox();
 			btnUpdateStocks = new Button();
 			label3 = new Label();
 			cbStockUnit = new ComboBox();
@@ -43,7 +44,6 @@
 			lblStock = new Label();
 			nudStock = new NumericUpDown();
 			lblNote = new Label();
-			cbStocksType = new ComboBox();
 			gbFlow.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)nudFlowPx).BeginInit();
 			((System.ComponentModel.ISupportInitialize)nudFlow).BeginInit();
@@ -140,7 +140,17 @@
 			gbStocks.Size = new Size(267, 150);
 			gbStocks.TabIndex = 1;
 			gbStocks.TabStop = false;
-			gbStocks.Text = "Stocks (monthly)";
+			gbStocks.Text = "Stocks";
+			// 
+			// cbStocksType
+			// 
+			cbStocksType.DropDownStyle = ComboBoxStyle.DropDownList;
+			cbStocksType.FormattingEnabled = true;
+			cbStocksType.Items.AddRange(new object[] { "Monthly", "Daily", "Hourly" });
+			cbStocksType.Location = new Point(16, 109);
+			cbStocksType.Name = "cbStocksType";
+			cbStocksType.Size = new Size(152, 28);
+			cbStocksType.TabIndex = 8;
 			// 
 			// btnUpdateStocks
 			// 
@@ -210,16 +220,6 @@
 			lblNote.Size = new Size(257, 20);
 			lblNote.TabIndex = 7;
 			lblNote.Text = "Displayed prices are per unit selected";
-			// 
-			// cbStocksType
-			// 
-			cbStocksType.DropDownStyle = ComboBoxStyle.DropDownList;
-			cbStocksType.FormattingEnabled = true;
-			cbStocksType.Items.AddRange(new object[] { "Monthly", "Daily", "Hourly" });
-			cbStocksType.Location = new Point(16, 109);
-			cbStocksType.Name = "cbStocksType";
-			cbStocksType.Size = new Size(152, 28);
-			cbStocksType.TabIndex = 8;
 			// 
 			// FormMain
 			// 
