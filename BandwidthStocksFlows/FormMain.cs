@@ -22,7 +22,8 @@ namespace BandwidthStocksFlows
 			{ "EB", 1000L * 1000 * 1000 * 1000 * 1000 * 1000 },
 		};
 
-		private const Int64 hourSeconds = 60 * 60;
+		private const Int64 minuteSeconds = 60;
+		private const Int64 hourSeconds = 60 * minuteSeconds;
 		private const Int64 daySeconds = hourSeconds * 24;
 		private const Int64 monthSeconds = daySeconds * 30;
 		private const Int32 bitsToByte = 8;
@@ -45,6 +46,7 @@ namespace BandwidthStocksFlows
 				0 => monthSeconds,
 				1 => daySeconds,
 				2 => hourSeconds,
+				3 => minuteSeconds,
 				_ => monthSeconds,
 			};
 			if (flows)

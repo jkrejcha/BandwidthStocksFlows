@@ -146,7 +146,7 @@
 			// 
 			cbStocksType.DropDownStyle = ComboBoxStyle.DropDownList;
 			cbStocksType.FormattingEnabled = true;
-			cbStocksType.Items.AddRange(new object[] { "Monthly", "Daily", "Hourly" });
+			cbStocksType.Items.AddRange(new object[] { "Monthly", "Daily", "Hourly", "Minutes" });
 			cbStocksType.Location = new Point(16, 109);
 			cbStocksType.Name = "cbStocksType";
 			cbStocksType.Size = new Size(152, 28);
